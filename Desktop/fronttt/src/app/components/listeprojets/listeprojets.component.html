@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+<br>
+<br>
+<br>
+<div class="container mt-5">
+
+    <div class="row d-flex justify-content-center ">
+
+      <div class="col-md-6">
+
+          <div class="card">
+            
+            <div class="input-box">
+              <input type="text" class="form-control">
+              <i class="fa fa-search"></i>                    
+            </div>
+
+
+            <div class="list border-bottom" *ngFor="let projet of projets">
+
+              <i class="fa fa-fire"></i>
+              <div class="d-flex flex-column ml-3">
+                <span>  {{projet.name}}</span> 
+                <span>  {{projet.titre}}</span> 
+                <small>{{projet.file}}</small>
+              </div>                   
+            </div>
+
+
+
+
+
+
+
+          </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
